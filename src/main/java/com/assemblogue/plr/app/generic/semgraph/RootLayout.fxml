@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<fx:root hbarPolicy="ALWAYS" pannable="true" type="ScrollPane" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <javafx.scene.layout.AnchorPane fx:id="root_pane" minHeight="200.0" minWidth="200.0" stylesheets="@app.css">
+         <children>
+            <AnchorPane fx:id="right_pane" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <MenuBar minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="2000.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Save" />
+                              <MenuItem mnemonicParsing="false" text="Close" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="About" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </AnchorPane>
+         </children>
+         <effect>
+            <SepiaTone level="0.17" />
+         </effect>
+      </javafx.scene.layout.AnchorPane>
+   </content>
+</fx:root>
